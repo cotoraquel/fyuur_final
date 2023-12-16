@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends 'layouts/main.html' %}
 {% block title %}Fyyur | Artists{% endblock %}
 {% block content %}
@@ -13,4 +14,21 @@
 	</li>
 	{% endfor %}
 </ul>
+=======
+{% extends 'layouts/main.html' %}
+{% block title %}Fyyur | Artists{% endblock %}
+{% block content %}
+<ul class="items">
+	{% for artist in artists %}
+	<li>
+		<a href="/artists/{{ artist.id }}">
+			<i class="fas fa-users"></i>
+			<div class="item">
+				<h5>{{ artist.name }}</h5>
+			</div>
+		</a>
+	</li>
+	{% endfor %}
+</ul>
+>>>>>>> 0efeac4a6ee2a4f2790a7183d815a5b44471e117
 {% endblock %}
